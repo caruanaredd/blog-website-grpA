@@ -51,18 +51,48 @@
                     <!-- Contact Form -->
                     <h3>Send your request</h3>
 
-                    <form action="" class="contact-form">
+                    <form action="mailto:info@nuggiez.com" method="post" enctype="text/plain" class="contact-form">
                         <div class="container">
                             <div class="row">
                                 <!-- First Name input -->
                                 <div class="col-6">
                                     <label for="first-name-input">First Name</label>
-                                    <input type="text" name="first-name" id="first-name-input" placeholder="Joe">
+                                    <input type="text" name="first-name" id="first-name-input" placeholder="Joe" required>
                                 </div>
                                 <!-- Last Name input -->
                                 <div class="col-6">
                                     <label for="last-name-input">Last Name</label>
-                                    <input type="text" name="last-name" id="last-name-input" placeholder="Borg">
+                                    <input type="text" name="last-name" id="last-name-input" placeholder="Borg" required>
+                                </div>
+                                <!-- Email Address input -->
+                                <div class="col-12">
+                                    <label for="email-input">Email Address</label>
+                                    <input type="email" name="email" id="email-input" placeholder="me@site.com" required>
+                                </div>
+                                <!-- Topic dropdown -->
+                                <div class="col-12">
+                                    <label for="topic-dropdown">Topic</label>
+                                    <select name="topic" id="topic-dropdown" required>
+                                        <option value="" disabled selected>Please choose a topic</option>
+                                        <option value="bacon">Bacon makes everything better!</option>
+                                        <option value="salads">Salads are OK, I guess</option>
+                                        <option value="cheese">More cheese based recipes pls</option>
+                                    </select>
+                                </div>
+                                <!-- Subject input -->
+                                <div class="col-12">
+                                    <label for="subject-input">Subject</label>
+                                    <input type="text" name="subject" id="subject-input" placeholder="I also like bacon nuggets" required>
+                                </div>
+                                <!-- Message input -->
+                                <div class="col-12">
+                                    <label for="message-input">Message</label>
+                                    <textarea name="message" id="message-input" cols="30" rows="10" placeholder="Please enter your message..." required></textarea>
+                                </div>
+                                <!-- Buttons -->
+                                <div class="col-12">
+                                    <button type="submit" class="button">Send Message</button>
+                                    <button type="reset" class="button clear">Cancel</button>
                                 </div>
                             </div>
                         </div>

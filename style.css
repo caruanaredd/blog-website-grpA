@@ -140,6 +140,24 @@ ol, ul {
 }
 
 
+.contact-form .button{
+    cursor: pointer;
+    padding: 1em;
+}
+
+.contact-form .clear{
+    background-color: #4f6f80;
+}
+
+
+.contact-form :invalid{
+    border-color: #ff0000;
+    color: #ff0000;
+}
+
+.contact-form :invalid::placeholder{
+    color: #ff0000;
+}
 
 
 
